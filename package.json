@@ -2,12 +2,13 @@
   "name": "backend_wedding_decoration",
   "version": "1.0.0",
   "description": "Website Wedding Decoration",
-  "main": "index.js",
+  "main": "src/index.ts",
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "tsc",
-    "start": "node dist/index.ts"
+    "start": "node dist/index.js",
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.8",
